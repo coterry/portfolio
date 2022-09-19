@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="icon" type="image/x-icon" href="img/chanellogo.png">
+    <title>샤넬 뷰디 공식 온라인 스토어</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Play);
+        @import url(http://fonts.googleapis.com/css?family=Monoton);
+
+        *{margin: 0;padding: 0;}
+        .video-background {
+        background: #000;
+        position: fixed;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -99;
+    }
+    .video-foreground,
+    .video-background iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    @media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+    }
+    @media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+    }
+        ul,ol{list-style-type: none;}
+        a{text-decoration: none;color: #bbb;}
+
+        body{position: fixed;width: 100%;height: 100%;background-color: #111;}
+
+        /* 로고 */
+        h1{position: fixed; top: 310px; left: 40px; z-index: 10;}
+        h1 img { width:100px; height:auto;}
+        header { width:100%; height:100px; position:fixed; top:300px;
+            background-color: white;
+            opacity: 0.5; box-sizing: border-box;
+        }
+		header:hover{
+			opacity: 0.8;
+		}
+
+        /* 1depth*/
+        #gnb {position:absolute; left:200px; width:100%;line-height: 100px;}
+	
+        #gnb>li {float: left;position:relative;}
+        #gnb>li>a { text-align: center; display:inline-block; width:150px; height:50px; font:bold 15px/3 play; color:#222; box-sizing:border-box;}
+        #gnb>li:hover>a { background:#aaa; color:#fff;}
+        #gnb em { display:inline-block;}
+        #gnb em i { 	margin-right:20px;}
+        /* 2depth */
+        #gnb ul{display: none; position: absolute;left: 0;top: 0;transition: 0.2s;}
+        #gnb>li:hover ul{display: block;top: 100px;}
+        #gnb ul a {text-align: center; display:block; width:150px; height:40px; background:#222; border-bottom:1px solid white; font:bold 16px/2.5 arial; color:#fff; box-sizing:border-box;  margin-bottom:3px; transition:all 0.5s; }
+        #gnb ul a:hover { background:#b9fb05; color:#333; }
+        /* sns */
+        #button{position: fixed; right: 30px; top: 340px;}
+        #button li{float: left;padding-left: 30px;}
+        #button .fa{color: black; transition: 0.5s; opacity: 0.6;}
+        #button li:hover .fa{transform: scale(1.5); opacity: 1;}
+    </style>
+</head>
+<body>
+    
+    <!-- 로고 -->
+	<h1><img src="img/chanel.png" /></h1>
+	
+	<!-- header -->
+	<header>		
+		<ul id="gnb">
+			<li>
+				<a href="#"><em>오뜨 꾸뛰르</em></a>
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>					
+			</li>
+			<li>
+				<a href="#"><em> 패션</em></a>
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>			
+			</li>
+			<li>
+				<a href="#"><em>하이 주얼리</em></a>	
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>				
+			</li>
+			<li>				
+				<a href="#"><em>화인 주얼리</em></a>	
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>				
+			</li>	
+            <li>				
+				<a href="#"><em>워치</em></a>		
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>			
+			</li>	
+            <li>				
+				<a href="#"><em>아이웨어</em></a>	
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>				
+			</li>	
+            <li>				
+				<a href="#"><em>향수</em></a>		
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>			
+			</li>	
+            <li>				
+				<a href="#"><em>메이크업</em></a>	
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>				
+			</li>	
+            <li>				
+				<a href="#"><em>스킨케어</em></a>	
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>				
+			</li>	
+            <li>			
+				<a href="#"><em>샤넬 소개</em></a>		
+                <ul>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+					<li><a href="#"><em>sub</em></a></li>
+				</ul>			
+			</li>	
+		</ul>
+	</header>
+
+    <!-- sns 버튼모음 -->
+	<ul id="button">
+		<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+	</ul>
+    <div class="video-background">
+        <div class="video-foreground">
+          <iframe src="https://www.youtube.com/embed/MRkCYR_JwSQ?controls=0&showinfo=0&rel=0&autoplay=1&vq=hd1080&loop=1&playlist=MRkCYR_JwSQ,MRkCYR_JwSQ&mute=1" frameborder="0" allowfullscreen></iframe>
+        </div>"https://www.youtube.com/embed/"
+      </div>
+</body>
+</html>
